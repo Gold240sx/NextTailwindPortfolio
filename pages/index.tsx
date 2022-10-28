@@ -1,21 +1,24 @@
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
+import Hero from '../components/Hero'
 
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div>
+    <div className='h-screen snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
         <title>Michael&apos;s Portfolio</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
       </Head>
 
       {/* Header */}
       <Header />
 
       {/* Hero */}
-
+      <section id='hero' className='snap-center'>
+        <Hero />
+      </section>
       {/* About */}
 
       {/* Experience */}
@@ -30,3 +33,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home;
