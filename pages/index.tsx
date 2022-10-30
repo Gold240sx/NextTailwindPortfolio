@@ -2,18 +2,22 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import SocialBar from '../components/SocialBar'
 
 import styles from '../styles/Home.module.css'
 
+
+//  app min-height: 248px.
 const Home: NextPage = () => {
   return (
-    <div className='h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='z-0 h-screen overflow-scroll snap-y snap-mandatory bg-slate-50'>
       <Head>
         <title>Michael&apos;s Portfolio</title>
       </Head>
 
-      {/* Header */}
+      {/* Header, Social Bar, Nav */}
       <Header />
+      <SocialBar />
 
       {/* Hero */}
       <section id='hero' className='snap-center'>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Cursor, useTypewriter } from "react-simple-typewriter"
 import BackgroundCircles from './BackgroundCircles'
+import Image from 'next/image';
+import heroImage from '../Assets/Images/Hero Image.png'
 
 type Props = {}
 
@@ -17,11 +19,17 @@ export default function Hero({}: Props) {
 
 
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center'>
         <BackgroundCircles />
+        <Image
+            src={heroImage}
+            alt='hero-image'
+            width={500}
+            style={{ marginLeft:'42px'}}
+        />
         <h1>
-            <span className='text-gray-400 text-2xl'>{text}</span>
-            <Cursor cursorColor='green' cursorStyle='|' />
+            <span className='text-2xl text-gray-400'>{text}</span>
+            <Cursor cursorColor='lime' cursorStyle='|' />
         </h1>
     </div>
   )

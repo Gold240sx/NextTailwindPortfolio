@@ -1,12 +1,16 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
+import macIcon from '../Assets/Icons/mac.png'
+
+import Image from 'next/image';
+import homePic from '../Assets/Images/header.png'
 
 type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className='top-0 sticky flex items-start justify-between max-w-7xl mx-auto z-20 xl: items-center p-5'>
+    <header className='sticky top-0 z-20 flex items-start items-center justify-between p-5 mx-auto max-w-7xl xl:'>
       <motion.div 
         initial={{
           x: -200,
@@ -23,24 +27,17 @@ export default function Header({}: Props) {
         }}
         className='flex flex-row items-center' 
       >
-            {/* social icons */}
-            <SocialIcon 
-              url="https://github.com/gold240sx" 
-              fgColor='gray'
-              bgColor='transparent'    
-            />
-            <SocialIcon 
-              url="https://stackoverflow.com/users/16441693/michael-martell" 
-              fgColor='transparent'
-              bgColor='gray'
-              style={{'height':'26px', 'width':'26px'}}
-            />
-            <SocialIcon 
-              url="https://michael-martell.com" 
-              fgColor='gray'
-              bgColor='transparent'
-            />
-        </motion.div>
+           {/* left grouping */}
+           {/* <macIcon style={{width: "40px", height: "40px"}} /> */}
+           <Image 
+            src={homePic}
+            alt="Home Link" 
+            width={225}
+            blurDataURL="data:..."
+            placeholder="blur"
+          />
+
+      </motion.div>
 
         <motion.div
           initial={{
@@ -56,14 +53,10 @@ export default function Header({}: Props) {
           transition={{
             duration: 1.5,
           }}
+          className=""
         >
-          <SocialIcon 
-            className='cursor-pointer'
-            network='email'
-            fgColor='gray'
-            bgColor='transparent'
-          /> 
-          <p className='uppercase hidden md:inline-flex text sm text-gray-400'>GET IN TOUCH!</p>
+          {/* Right Grouping */}
+          SignIn
         </motion.div>
     </header>
   )
