@@ -1,5 +1,23 @@
+@font-face {
+    font-family: 'FiraCodeBold';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/Assets/fonts/FiraCodeBoldNerdFontComplete.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FiraCodeLight';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/Assets/fonts/FiraCodeLightNerdFontComplete.ttf) format('truetype');
+  }
+
 * {
     box-sizing: border-box;
+}
+
+html, body {
+    font-family: FiraCodeBold, Arial, Helvetica, sans-serif;
 }
 
 @tailwind base;

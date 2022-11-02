@@ -6,7 +6,7 @@ type Props = {}
 
 export default function SocialBar({}: Props) {
   return (
-    <header className='fixed bottom-0 z-20 flex items-start items-center justify-between p-1 mx-auto max-w-7xl '>
+    <header className='fixed bottom-0 z-20 flex items-center justify-between p-1 mx-auto max-w-7xl '>
       <motion.div 
         initial={{
           x: -200,
