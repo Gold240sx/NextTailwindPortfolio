@@ -8,37 +8,37 @@ import { useStateContext } from "../context/ContextProvider";
 
 //  app min-height: 248px.
 const Home: NextPage = () => {
-  const { currentMode }: any = useStateContext();
+	const { currentMode }: any = useStateContext();
 
-  return (
-    <div className={currentMode === "Dark" ? "dark" : ""}>
-      <div className="z-0 h-screen overflow-scroll snap-mandatory snap-y dark:bg-main-dark-bg bg-slate-50">
-        <Head>
-          <title>Michael&apos;s Portfolio</title>
-        </Head>
+	return (
+		<div className={currentMode === "Dark" ? "dark" : ""}>
+			<div className="z-0 h-screen overflow-scroll snap-mandatory snap-y dark:bg-main-dark-bg bg-slate-50">
+				<Head>
+					<title>Michael&apos;s Portfolio</title>
+				</Head>
 
-        {/* Header, Social Bar, Nav */}
-        <Header />
-        <SocialBar />
+				{/* Header, Social Bar, Nav */}
+				<Header />
+				<SocialBar />
 
-        {/* Hero */}
-        <section id="hero" className="snap-center">
-          <Hero />
-        </section>
-        {/* About */}
+				{/* Hero */}
+				<section id="hero" className="snap-center">
+					<Hero />
+				</section>
+				{/* About */}
 
-        {/* Experience */}
+				{/* Experience */}
 
-        {/* Skills */}
+				{/* Skills */}
 
-        {/* Projects */}
+				{/* Projects */}
 
-        {/* Contact Me */}
+				{/* Contact Me */}
 
-        <h1 className="text-red-500">Let&apos;s build an AWESOME portfolio!</h1>
-      </div>
-    </div>
-  );
+				<h1 className="text-red-500">Let&apos;s build an AWESOME portfolio!</h1>
+			</div>
+		</div>
+	);
 };
 
 export default Home;

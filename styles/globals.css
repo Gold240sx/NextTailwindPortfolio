@@ -4,35 +4,36 @@
 
 /* Replace  FontFaces w/ Next 13 Fonts */
 @font-face {
-    font-family: 'FiraCodeBold';
-    font-style: normal;
-    font-weight: 500;
-    src: url(/Assets/fonts/FiraCodeBoldNerdFontComplete.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'FiraCodeLight';
-    font-style: normal;
-    font-weight: 500;
-    src: url(/Assets/fonts/FiraCodeLightNerdFontComplete.ttf) format('truetype');
-  }
-
-* {
-    box-sizing: border-box;
+	font-family: "FiraCodeBold";
+	font-style: normal;
+	font-weight: 500;
+	src: url(/Assets/fonts/FiraCodeBoldNerdFontComplete.ttf) format("truetype");
 }
 
-html, body {
-    font-family: FiraCodeBold, Arial, Helvetica, sans-serif;
+@font-face {
+	font-family: "FiraCodeLight";
+	font-style: normal;
+	font-weight: 500;
+	src: url(/Assets/fonts/FiraCodeLightNerdFontComplete.ttf) format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: FiraCodeBold, Arial, Helvetica, sans-serif;
 }
 
 .glass {
- background-color:  hsla(0%, 0%, 100%, 0.4) ;
-  --webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid hsla(0, 0, 100%, 0.2);
+	background-color: hsla(0%, 0%, 100%, 0.4);
+	--webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border: 1px solid hsla(0, 0, 100%, 0.2);
 }
 
 .glass:hover {
-  background: hsla(0, 0, 100%, .7);
-  border: 1px solid #fff;
+	background: hsla(0, 0, 100%, 0.7);
+	border: 1px solid #fff;
 }
