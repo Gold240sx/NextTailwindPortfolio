@@ -19,6 +19,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "framer-motion": "^7.6.2",
     "next": "13.0.0",
+    "next-optimized-images": "^2.6.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-simple-typewriter": "^4.0.5",
