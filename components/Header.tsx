@@ -116,6 +116,7 @@ export default function Header({}: Props) {
 				</div>
 			</motion.div>
 
+            SEARCHBAR
 			<motion.div
 				initial={{
 					x: 200,

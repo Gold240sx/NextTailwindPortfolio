@@ -2,11 +2,13 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import About from "../components/About";
+import About from "./About";
 import SocialBar from "../components/SocialBar";
 import PageBar from "../components/PageBar";
 import styles from "../styles/Home.module.css";
 import { useStateContext } from "../context/ContextProvider";
+import Timeline from "./Timeline";
+import Skills from "./Skills"
 
 //  app min-height: 248px.
 const Home: NextPage = () => {
@@ -31,6 +33,14 @@ const Home: NextPage = () => {
 				{/* About */}
 				<section id="About" className="snap-center">
 					<About />
+				</section>
+				{/* Timeline */}
+				<section id="Timeline" className="snap-center">
+					<Timeline />
+				</section>
+				{/* Skills */}
+				<section id="Skills" className="snap-center">
+					<Skills />
 				</section>
 				{/* Projects */}
 
