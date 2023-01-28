@@ -24,12 +24,12 @@ export default function Hero({}: Props) {
 	return (
 		<div className="flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center">
 			<BackgroundCircles />
-			{/* <Image
+			<Image
             src={heroRing}
             alt='hero-image'
             width={550}
-            className='z-0 top-[7.5rem] ml-[15px]'
-             /> */}
+            className='z-0 top-[22%] ml-[15px] absolute'
+             />
 			<Image
 				src={heroImage}
 				alt="hero-image"
