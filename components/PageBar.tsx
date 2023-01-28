@@ -32,19 +32,13 @@ export default function PageBar() {
 						className="text-2xl text-gray-400 uppercase hover:text-4xl"
 						href="#"
 					>
-						PROJECTS
-					</a>
-					<a
-						className="text-2xl text-gray-400 uppercase hover:text-4xl"
-						href="#"
-					>
-						EXPERIENCE
-					</a>
-					<a
-						className="text-2xl text-gray-400 uppercase hover:text-4xl"
-						href="#"
-					>
 						SKILLS
+					</a>
+					<a
+						className="text-2xl text-gray-400 uppercase hover:text-4xl"
+						href="#"
+					>
+						TIMELINE
 					</a>
 					<a
 						className="text-2xl text-gray-400 uppercase hover:text-4xl"
@@ -56,10 +50,31 @@ export default function PageBar() {
 						className="text-2xl text-gray-400 uppercase hover:text-4xl"
 						href="#"
 					>
-						TIMELINE
+						EXPERIENCE
 					</a>
-					<a className="text-2xl text-gray-400 uppercase hover:text-4xl" href="#">
+					<a
+						className="text-2xl text-gray-400 uppercase hover:text-4xl"
+						href="#"
+					>
+						PROJECTS
+					</a>
+					<a
+						className="text-2xl text-gray-400 uppercase hover:text-4xl"
+						href="#"
+					>
 						CONTACT
+					</a>
+					<a
+						className="text-2xl text-gray-400 uppercase hover:text-4xl"
+						href="#"
+					>
+						Blog
+					</a>
+					<a
+						className="text-2xl text-gray-400 uppercase hover:text-4xl"
+						href="#"
+					>
+						ART
 					</a>
 				</motion.div>
 			</header>
