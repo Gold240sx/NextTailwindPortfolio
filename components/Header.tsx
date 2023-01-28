@@ -6,6 +6,7 @@ import "../styles/Header.module.css";
 
 import Image from "next/image";
 import homePic from "../Assets/Images/header.png";
+import homePicDark from "../Assets/Images/headerDark.png";
 import { useStateContext } from "../context/ContextProvider";
 
 type Props = {};
@@ -29,7 +30,7 @@ export default function Header({}: Props) {
 				transition={{
 					duration: 1.5,
 				}}
-				className="flex flex-row items-center"
+				className="flex flex-row items-center "
 			>
 				{/* left grouping */}
 				{/* <macIcon style={{width: "40px", height: "40px"}} /> */}
@@ -39,6 +40,15 @@ export default function Header({}: Props) {
 					width={225}
 					blurDataURL="data:..."
 					placeholder="blur"
+					className="flex mr-4 select-none dark:hidden"
+				/>
+				<Image
+					src={homePicDark}
+					alt="Home Link"
+					width={225}
+					blurDataURL="data:..."
+					placeholder="blur"
+					className="hidden mr-4 select-none dark:flex"
 				/>
 				<div className="z-10 inline-flex h-full mode-picker">
 					<input
@@ -58,7 +68,7 @@ export default function Header({}: Props) {
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-8 h-full mode-picker"
+							className="w-8 h-full -mt-4 mode-picker opacity-40"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke={textColor}
@@ -89,7 +99,7 @@ export default function Header({}: Props) {
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								className="w-8 h-full mode-picker"
+								className="w-8 h-full -mt-4 opacity-40 mode-picker"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke={textColor}
@@ -120,10 +130,12 @@ export default function Header({}: Props) {
 				transition={{
 					duration: 1.5,
 				}}
-				className=""
+				className="dark:text-white"
 			>
 				{/* Right Grouping */}
-				SignIn
+				<button className="px-4 py-1 rounded-full mt-[-90px] dark:text-slate-800 dark:bg-slate-600 bg-slate-300 text-slate-100 select-none dark:hover:bg-slate-700 hover:bg-slate-200">
+					SignIn
+				</button>
 			</motion.div>
 		</header>
 	);

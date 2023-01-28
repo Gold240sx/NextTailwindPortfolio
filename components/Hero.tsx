@@ -10,12 +10,15 @@ type Props = {};
 export default function Hero({}: Props) {
 	const [text, count] = useTypewriter({
 		words: [
-			"Competed in the Juggling World championships",
-			"Loves Cars, Design, and Art",
-			"Automation, App Creation",
-			"Small Business, growth bring More Vacations",
+			"I'm a solution-first, front-end web developer",
+			"committed to building dynamic and engaging web applications",
+			"to support small businesses in competing growing and thriveing",
+			"to automate processes and improve efficiency",
+			"and to make our life on the the internet just a bit more fun!",
 		],
 		delaySpeed: 2000,
+		loop: true,
+		deleteSpeed: 50,
 	});
 
 	return (
@@ -25,8 +28,8 @@ export default function Hero({}: Props) {
             src={heroRing}
             alt='hero-image'
             width={550}
-            style={{ marginLeft:'15px'}}
-        /> */}
+            className='z-0 top-[7.5rem] ml-[15px]'
+             /> */}
 			<Image
 				src={heroImage}
 				alt="hero-image"
@@ -36,7 +39,7 @@ export default function Hero({}: Props) {
 
 			<h1>
 				<span className="text-2xl text-gray-400">{text}</span>
-				<Cursor cursorColor="lime" cursorStyle="|" />
+				<Cursor cursorColor="orange" cursorStyle="|" />
 			</h1>
 		</div>
 	);
