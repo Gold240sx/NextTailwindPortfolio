@@ -84,7 +84,77 @@ export default function Timeline() {
 							<div className="font-bold">Death Cab For Cutie</div>
 							<div className="text-zinc-400">3PM - Teal Stage</div>
 						</div>
-                        
+
+						<div className="text-right">
+							<div className="font-bold">Blink 182</div>
+							<div className="text-zinc-400">6PM - Sage Stage</div>
+						</div>
+						<div id="empty-right-2"></div>
+
+						<div id="empty-left-1"></div>
+						<div className="">
+							<div className="font-bold">Death Cab For Cutie</div>
+							<div className="text-zinc-400">3PM - Teal Stage</div>
+						</div>
+
+						<div className="text-right">
+							<div className="font-bold">Blink 182</div>
+							<div className="text-zinc-400">6PM - Sage Stage</div>
+						</div>
+						<div id="empty-right-2"></div>
+
+						<div id="empty-left-1"></div>
+						<div className="">
+							<div className="font-bold">Death Cab For Cutie</div>
+							<div className="text-zinc-400">3PM - Teal Stage</div>
+						</div>
+
+						<div className="text-right">
+							<div className="font-bold">Blink 182</div>
+							<div className="text-zinc-400">6PM - Sage Stage</div>
+						</div>
+						<div id="empty-right-2"></div>
+
+						<div id="empty-left-1"></div>
+						<div className="">
+							<div className="font-bold">Death Cab For Cutie</div>
+							<div className="text-zinc-400">3PM - Teal Stage</div>
+						</div>
+
+						<div className="text-right">
+							<div className="font-bold">Blink 182</div>
+							<div className="text-zinc-400">6PM - Sage Stage</div>
+						</div>
+						<div id="empty-right-2"></div>
+
+						<div id="empty-left-1"></div>
+						<div className="">
+							<div className="font-bold">Death Cab For Cutie</div>
+							<div className="text-zinc-400">3PM - Teal Stage</div>
+						</div>
+						<div className="text-right">
+							<div className="font-bold">Blink 182</div>
+							<div className="text-zinc-400">6PM - Sage Stage</div>
+						</div>
+						<div id="empty-right-2"></div>
+
+						<div id="empty-left-1"></div>
+						<div className="">
+							<div className="font-bold">Death Cab For Cutie</div>
+							<div className="text-zinc-400">3PM - Teal Stage</div>
+						</div>
+
+						<div className="text-right">
+							<div className="font-bold">Blink 182</div>
+							<div className="text-zinc-400">6PM - Sage Stage</div>
+						</div>
+						<div id="empty-right-2"></div>
+
+						<div id="empty-left-1"></div>
+						<div className="">
+							<div className="font-bold">Death Cab For Cutie</div>
+							<div className="text-zinc-400">3PM - Teal Stage</div>
+						</div>
 					</div>
 				</div>
 			</div>

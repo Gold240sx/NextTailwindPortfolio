@@ -9,6 +9,12 @@ import styles from "../styles/Home.module.css";
 import { useStateContext } from "../context/ContextProvider";
 import Timeline from "./Timeline";
 import Skills from "./Skills"
+import Education from "./Education";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Blog from "./Blog";
+import Art from "./Art";
 
 //  app min-height: 248px.
 const Home: NextPage = () => {
@@ -34,21 +40,38 @@ const Home: NextPage = () => {
 				<section id="About" className="snap-center">
 					<About />
 				</section>
-				{/* Timeline */}
-				<section id="Timeline" className="snap-center">
-					<Timeline />
-				</section>
 				{/* Skills */}
 				<section id="Skills" className="snap-center">
 					<Skills />
 				</section>
-				{/* Projects */}
-
+				{/* Timeline */}
+				<section id="Timeline" className="snap-center">
+					<Timeline />
+				</section>
+				{/* Education */}
+				<section id="Education" className="snap-center">
+					<Education />
+				</section>
 				{/* Experience */}
-
-				{/* Skills */}
-
+				<section id="Experience" className="snap-center">
+					<Experience />
+				</section>
+				{/* Projects */}
+				<section id="Projects" className="snap-center">
+					<Projects />
+				</section>
 				{/* Contact Me */}
+				<section id="Contact" className="snap-center">
+					<Contact />
+				</section>
+				{/* Blog */}
+				<section id="Blog" className="snap-center">
+					<Blog />
+				</section>
+				{/* Art*/}
+				<section id="Art" className="snap-center">
+					<Art />
+				</section>
 
 				<h1 className="text-red-500">Let&apos;s build an AWESOME portfolio!</h1>
 			</div>

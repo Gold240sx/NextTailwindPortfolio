@@ -28,7 +28,8 @@ export default function Hero({}: Props) {
             src={heroRing}
             alt='hero-image'
             width={550}
-            className='z-0 top-[22%] ml-[15px] absolute'
+            className='z-0 flex justify-center align-middle -mt-[1.8rem] ml-[19px] absolute'
+            style={{marginTop: "-1.8rem !important"}}
              />
 			<Image
 				src={heroImage}
